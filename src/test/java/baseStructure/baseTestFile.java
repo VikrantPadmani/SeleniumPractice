@@ -68,6 +68,7 @@ public class baseTestFile {
 	@AfterMethod(alwaysRun = true)
 	public void teardown() {
 		driver.close();
+		System.out.println("System is now shut down and check in Git");
 	}
 
 	public String getScreenshot(String testCaseName, WebDriver driver) throws IOException {
